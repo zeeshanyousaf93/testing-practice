@@ -1,0 +1,41 @@
+// ==================================================
+// DEFINE FUNCTION(S)
+// ==================================================
+function sum() {
+
+}
+
+// ==================================================
+// DEFINE AND EXECUTE TEST CASES
+// ==================================================
+try {
+  // --------------------------------------------------
+  // Test Case 1
+  // --------------------------------------------------
+  // It should return the sum of two numbers.
+  if (sum(1, 1) !== 2) throw new Error('Expected sum(1, 1) to be 2.');
+
+  // --------------------------------------------------
+  // Test Case 2
+  // --------------------------------------------------
+  // It should ignore additional numbers.
+
+  // --------------------------------------------------
+  // Test Case 3
+  // --------------------------------------------------
+  // When invoked with only 1 number, it should return that number.
+
+  // --------------------------------------------------
+  // Test Case 4
+  // --------------------------------------------------
+  // When invoked with no numbers, it should return 0.
+
+  console.log('All tests passed successfully.');
+
+// ==================================================
+// PRINT ERRORS
+// ==================================================
+} catch (e) {
+  console.warn('Whoops, the following test did not pass:');
+  console.error(e.message);
+}
