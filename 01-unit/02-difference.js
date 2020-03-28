@@ -13,7 +13,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the difference of two numbers.
-  if (difference(1, 1) !== 0) throw new Error('Expected difference(1, 1) to be 0.');
+  var result = difference(1, 1);
+  if (result !== 0) throw new Error('Expected difference(1, 1) to be 0. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2

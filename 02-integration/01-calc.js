@@ -13,7 +13,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the correct sum when the user provides: 'add', 1, 1.
-  if (calc('add', 1, 1) !== 2) throw new Error('Expected calc("add", 1, 1) to be 2.');
+  var result = calc('add', 1, 1);
+  if (result !== 2) throw new Error('Expected calc("add", 1, 1) to be 2. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2

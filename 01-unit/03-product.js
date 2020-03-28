@@ -13,7 +13,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the product of two numbers.
-  if (product(2, 2) !== 4) throw new Error('Expected product(2, 2) to be 4.');
+  var result = product(2, 2);
+  if (result !== 4) throw new Error('Expected product(2, 2) to be 4. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2

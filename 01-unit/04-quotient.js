@@ -13,7 +13,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the quotient of two numbers.
-  if (quotient(2, 2) !== 1) throw new Error('Expected quotient(2, 2) to be 1.');
+  var result = quotient(2, 2);
+  if (result !== 1) throw new Error('Expected quotient(2, 2) to be 1. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
