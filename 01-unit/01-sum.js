@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function sum(num1, num2) {
+function sum(num1, num2 = 0) {
 return num1 + num2;
 }
 
@@ -27,6 +27,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+	var result = sum(6);
+	if (result !== 6) throw new Error('Expected sum(6) to be 6. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
