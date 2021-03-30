@@ -1,8 +1,14 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
+function sum(num1, num2) {
+return num1 + num2;
+}
 
+function calc(operation, num1, num2) {
+	switch (operation){
+	case 'add': return sum(num1,num2);
+}
 }
 
 // ==================================================
@@ -12,9 +18,9 @@ try {
   // --------------------------------------------------
   // Test Case 1
   // --------------------------------------------------
-  // It should return the correct sum when the user provides: 'add', 1, 1.
-  var result = calc('add', 1, 1);
-  if (result !== 2) throw new Error('Expected calc("add", 1, 1) to be 2. Received: ' + result);
+  // It should return the correct sum when the user provides: 'add', 6, 2.
+  var result = calc('add', 6, 2);
+  if (result !== 8) throw new Error('Expected calc("add", 6, 2) to be 8. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
