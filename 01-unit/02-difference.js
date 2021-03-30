@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function difference(num1, num2) {
+function difference(num1, num2 = 0) {
 return num1 - num2;
 }
 
@@ -27,6 +27,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+	var result = difference(6);
+	  if (result !== 6) throw new Error('Expected difference(6) to be 4. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
