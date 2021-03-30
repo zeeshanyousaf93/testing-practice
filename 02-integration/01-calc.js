@@ -10,12 +10,16 @@ return num1 - num2;
 function product(num1, num2) {
 	return num1 * num2;
 }
+function divide(num1, num2) {
+	return num1 / num2;
+}
 
 function calc(operation, num1, num2) {
 	switch (operation){
 	case 'add': return sum(num1,num2);
 	case 'diff': return difference(num1,num2);
 	case 'mul': return product(num1,num2);
+	case 'div': return divide(num1,num2);
 }
 }
 
@@ -27,8 +31,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the correct sum when the user provides: 'add', 6, 2.
-  var result = calc('add', 6, 2);
-  if (result !== 8) throw new Error('Expected calc("add", 6, 2) to be 8. Received: ' + result);
+       var result = calc('add', 6, 2);
+ 	 if (result !== 8) throw new Error('Expected calc("add", 6, 2) to be 8. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
@@ -48,6 +52,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // It should return the correct quotient when the user provides: 'divide', 9, 3.
+	var result = calc('div', 9, 3);
+	  if (result !== 3) throw new Error('Expected calc("div", 9, 3) to be 3. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 5
