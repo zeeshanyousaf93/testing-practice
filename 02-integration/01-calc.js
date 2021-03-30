@@ -13,13 +13,16 @@ function product(num1, num2) {
 function divide(num1, num2) {
 	return num1 / num2;
 }
-
+function exponent(num1, num2) {
+        return 'operation not supported';
+}
 function calc(operation, num1, num2) {
 	switch (operation){
-	case 'add': return sum(num1,num2);
+	case 'add': return sum(num1,num2);	
 	case 'diff': return difference(num1,num2);
-	case 'mul': return product(num1,num2);
-	case 'div': return divide(num1,num2);
+	case 'mul': return product(num1,num2);	
+	case 'div': return divide(num1,num2);   
+	case 'exp': return exponent(num1,num2); 
 }
 }
 
@@ -59,6 +62,9 @@ try {
   // Test Case 5
   // --------------------------------------------------
   // It should return the message 'Operation not supported.' when the user provides: exponent, 2, 8.
+	var result = calc('exp', 2, 8);
+          if (result !== 'operation not supported') throw new Error('Expected calc("exp", 2, 8) to be "operation not supported". Received: ' + result);
+
 
   console.log('All tests passed successfully.');
 
