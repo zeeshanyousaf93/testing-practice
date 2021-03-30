@@ -1,8 +1,8 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function difference() {
-
+function difference(num1, num2) {
+return num1 - num2;
 }
 
 // ==================================================
@@ -13,8 +13,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the difference of two numbers.
-  var result = difference(1, 1);
-  if (result !== 0) throw new Error('Expected difference(1, 1) to be 0. Received: ' + result);
+  var result = difference(6, 2);
+  if (result !== 4) throw new Error('Expected difference(6, 2) to be 4. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
