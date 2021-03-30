@@ -20,6 +20,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
+	var result = sum(6, 2, 3, 4, 5);
+	if (result !== 8) throw new Error('Expected sum(6, 2, 3, 4, 5) to be 8. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 3
