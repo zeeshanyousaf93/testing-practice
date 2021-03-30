@@ -1,8 +1,8 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function quotient() {
-
+function quotient(num1, num2) {
+return num1 / num2;
 }
 
 // ==================================================
@@ -13,8 +13,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the quotient of two numbers.
-  var result = quotient(2, 2);
-  if (result !== 1) throw new Error('Expected quotient(2, 2) to be 1. Received: ' + result);
+  var result = quotient(6, 2);
+  if (result !== 3) throw new Error('Expected quotient(6, 2) to be 3. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
