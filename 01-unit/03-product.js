@@ -1,8 +1,8 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function product() {
-
+function product(num1, num2) {
+return num1 * num2;
 }
 
 // ==================================================
@@ -13,8 +13,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the product of two numbers.
-  var result = product(2, 2);
-  if (result !== 4) throw new Error('Expected product(2, 2) to be 4. Received: ' + result);
+  var result = product(6, 2);
+  if (result !== 12) throw new Error('Expected product(6, 2) to be 12. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
